@@ -21,4 +21,12 @@ public class ShipServices {
     public List<Ship> ListShips () {
         return repository.findAll();
     }
+
+    public Ship UpdateShip (String register, String newRegister) {
+        return repository.update(register, newRegister);
+    }
+
+    public Ship DeleteShip (String register) {
+        return repository.delete(register);
+    }
 }

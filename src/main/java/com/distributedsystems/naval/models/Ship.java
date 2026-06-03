@@ -15,7 +15,7 @@ public class Ship {
             description = "Registro oficial do navio",
             example = "BR12345"
     )
-    private final String register;
+    private String register;
     //private routeID RouteID;
 
     public Ship(String Register){
@@ -29,5 +29,9 @@ public class Ship {
 
     public String getRegister() {
         return register;
+    }
+
+    public void setRegister(String newRegister) {
+        this.register = newRegister;
     }
 }
