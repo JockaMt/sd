@@ -14,12 +14,16 @@ public class ShipServices {
 
     public Ship CreateShip (String register) {
         Ship ship = new Ship(register);
-        repository.save(ship);
+        repository.create(ship);
         return ship;
     }
 
     public List<Ship> ListShips () {
         return repository.findAll();
+    }
+
+    public Ship GetShipByRegister (String register) {
+        return repository.findByRegister(register);
     }
 
     public Ship UpdateShip (String register, String newRegister) {

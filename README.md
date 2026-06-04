@@ -61,6 +61,71 @@ Cada registro possui os seguintes atributos:
 
 ---
 
+## Entidades da Aplicação
+
+### 1. Ship (Navio)
+
+**Descrição:** Representa uma embarcação registrada no sistema para operações de transporte marítimo.
+
+**Localização:** `src/main/java/com/distributedsystems/naval/models/Ship.java`
+
+**Atributos:**
+
+| Atributo  | Tipo   | Descrição                              | Exemplo                              |
+| --------- | ------ | -------------------------------------- | ------------------------------------ |
+| `id`      | String | Identificador único (UUID gerado)      | `550e8400-e29b-41d4-a716-446655440000` |
+| `register`| String | Número de registro oficial do navio    | `BR12345`                            |
+
+**Métodos:**
+
+| Método                  | Retorno | Descrição                          |
+| ----------------------- | ------- | ---------------------------------- |
+| `getId()`               | String  | Retorna o identificador único      |
+| `getRegister()`         | String  | Retorna o registro do navio        |
+| `setRegister(newRegister)` | void | Atualiza o registro do navio       |
+
+**Exemplo de Instância:**
+```java
+Ship ship = new Ship("BR12345");
+// ship.id = "550e8400-e29b-41d4-a716-446655440000"
+// ship.register = "BR12345"
+```
+
+---
+
+### 2. Harbor (Porto)
+
+**Descrição:** Representa um porto onde as operações de importação e exportação são realizadas.
+
+**Localização:** `src/main/java/com/distributedsystems/naval/models/Harbor.java`
+
+**Status:** Entidade em desenvolvimento (classe atualmente vazia)
+
+**Atributos Propostos:**
+
+| Atributo    | Tipo   | Descrição                          |
+| ----------- | ------ | ---------------------------------- |
+| `id`        | String | Identificador único do porto       |
+| `name`      | String | Nome do porto (ex: Santos, Rio)    |
+| `country`   | String | País onde o porto está localizado  |
+| `capacity`  | Long   | Capacidade de carga do porto       |
+
+---
+
+## Relacionamentos Entre Entidades
+
+```
+Ship (Navio)
+  ├── Um navio pode estar em um porto
+  └── Id: UUID gerado automaticamente
+
+Harbor (Porto)
+  ├── Um porto pode ter múltiplos navios
+  └── Id: Identificador único do porto
+```
+
+---
+
 ## Tecnologias Utilizadas
 
 * Linguagem de Programação: (preencher)
