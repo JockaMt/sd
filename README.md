@@ -145,7 +145,7 @@ curl -X DELETE http://localhost:8080/ship/BR12345
 
 ---
 
-## � Documentação Interativa com Swagger
+## 🗃️ Documentação Interativa com Swagger
 
 **Aproveite a documentação interativa do Swagger para explorar e testar todos os endpoints de forma intuitiva!**
 
@@ -164,7 +164,7 @@ Acesse: `http://localhost:8080/swagger-ui.html`
 
 ---
 
-## �📋 Descrição Geral do Projeto
+## 📋 Descrição Geral do Projeto
 
 O Sistema de Registro de Importações e Exportações por Vias Navais é uma aplicação desenvolvida para auxiliar no gerenciamento de operações de comércio marítimo. O sistema permite o cadastro e controle de informações relacionadas a cargas importadas e exportadas através de portos e embarcações.
 
