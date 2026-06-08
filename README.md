@@ -19,6 +19,8 @@ cd /caminho/para/projeto
 ./gradlew bootRun
 ```
 
+⚠️ No terminal, o spring web irá para o carregamento em 80%, quando isso acontecer, a aplicação estará no ar!
+
 A aplicação estará disponível em `http://localhost:8080`
 
 ### 2. 🎯 Testar Endpoints com Swagger UI (Recomendado)
